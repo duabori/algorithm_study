@@ -12,15 +12,12 @@ int main()
 	for (i = 0; input[i] != '\0'; i++)
 	{
 		if (input[i] >= 48 && input[i] <= 57)
-		{
 			result = result * 10 + (input[i] - '0');
-		}
 	}
 	printf("%d\n", result);
 	for (i = 1; i <= result; i++)
 	{
-		if (result % i == 0)
-			cnt++;
+		if (result % i == 0) cnt++;
 	}
 	printf("%d\n", cnt);
 	return 0;
