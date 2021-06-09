@@ -29,7 +29,7 @@ int main()
 
 
 
-/* 미완성 코드
+/* incomplete code
 int main()
 {
 	int i = 0;
