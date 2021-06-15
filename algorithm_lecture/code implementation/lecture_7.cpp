@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <stdio.h>
 
 using namespace std;
@@ -21,39 +21,3 @@ int main()
 	return 0;
 }
 
-
-*/
-#include <iostream>
-#include <stdio.h>
-#include <cstdio>
-#define _CRT_SECURE_NO_WARNINGS
-
-using namespace std;
-
-int main()
-{
-	char input[101] = { 0 , };
-	char output[101] = { 0 , };
-	int j = 0;
-
-	cin.getline(input, 101, '\n');
-
-	for (int i = 0; input[i] != '\0'; i++)
-	{
-		if (input[i] != ' ')
-		{
-			if (input[i] >= 'A' && input[i] <= 'Z')
-			{
-				output[j++] == input[i] + 32;
-			}
-			else if (c[i] >= 97 && c[i] <= 122)
-			{
-				output[j++] == input[i];
-			}
-		}
-	}
-	output[j] = '\0';
-	printf("%s", output);
-
-	return 0;
-}
